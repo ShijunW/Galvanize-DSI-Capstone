@@ -9,6 +9,9 @@ __pycache__/
 #yelp datasets
 yelp_dataset/
 
+#yelp API
+yelp_api_key.yaml
+
 # Distribution / packaging
 .Python
 build/
