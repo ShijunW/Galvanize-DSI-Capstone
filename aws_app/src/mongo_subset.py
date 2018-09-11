@@ -4,12 +4,16 @@ from pymongo import MongoClient
 
 def Mongo_subset():
     #read in the whole phx restaurant data
-    filename = './yelp_dataset/restaurant_review_user_phx.csv'
-    phx = pd.read_csv(filename, index_col=0)
+    #filename = './yelp_dataset/restaurant_review_user_phx.csv'
+    #phx = pd.read_csv(filename, index_col=0)
 
     # only take smalll subset
-    sub_columns = ['user_id', 'business_id', 'categories']
-    phx_sub = phx[sub_columns]
+    #sub_columns = ['user_id', 'business_id', 'categories']
+    #phx_sub = phx[sub_columns]
+    
+    #read in the subset data
+    filename = './yelp_data/phx_review_5.csv'
+    phx_sub = pd.read_csv(filename, index_col=0)
 
     # get subset of user with review counts greater or equals to 5
     phx_review_5 = phx_sub.groupby('user_id').filter(lambda x: x['business_id'].count() >= 5)
