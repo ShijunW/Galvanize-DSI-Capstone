@@ -82,5 +82,5 @@ python mongo_subset.py
 # navigate to aws_app directory and excute
 python yelp_app.py
 ```
-now in your preferred browser, type 52.27.155.84:5000, replace `52.27.155.84` with your acural value from step 2. Some user id to try with: `--Nnm_506G_p8MxAOQna5w`, `--2HUmLkcNHZp0xw6AMBPg`, `-0IiMAZI2SsQ7VmyzJjokQ`
+Now in your preferred browser, type `52.27.155.84:5000`, replace `52.27.155.84` with your acural value from `step 2` above. Some user id to try with: `--Nnm_506G_p8MxAOQna5w`, `--2HUmLkcNHZp0xw6AMBPg`, `-0IiMAZI2SsQ7VmyzJjokQ`
 
