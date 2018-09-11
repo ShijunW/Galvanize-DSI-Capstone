@@ -1,4 +1,4 @@
-EC2 on AWS
+## EC2 on AWS
 
 EC2 is a remote virtual machine that runs programs much like your local machine. Here you will learn how to
 run tasks on an EC2 machine. Most EC2 instances come without a lot of the packages you need. Here, we will use
@@ -67,4 +67,20 @@ pip install awscli boto3
 ```
 sudo service mongod start
 ```
+If there is error, try to follow [this link](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/#install-mongodb-community-edition) to make it work.
+
+8. Create MongoDB
+
+```
+# navigate to aws_app/src directory and execute
+python mongo_subset.py
+```
+
+9. Start Web page
+
+```
+# navigate to aws_app directory and excute
+python yelp_app.py
+```
+now in your preferred browser, type 52.27.155.84:5000, replace `52.27.155.84` with your acural value from step 2. Some user id to try with: `--Nnm_506G_p8MxAOQna5w`, `--2HUmLkcNHZp0xw6AMBPg`, `-0IiMAZI2SsQ7VmyzJjokQ`
 
