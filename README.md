@@ -3,7 +3,7 @@ Capstone Project - Yelp Restaurants Recommender
 
 [AWS EC2 Link](http://34.220.105.213:5000/) for the Restaurants Recommender.
 
-### Some Screenshots
+## Some Screenshots
 
 Starter page:
 ![](/Presentation/starter_page.png)
@@ -15,7 +15,7 @@ Recommender page:
 ![](/Presentation/recommender_page.png)
 
 
-### Dataset and Yelp API
+## Dataset and Yelp API
 
 Yelp dataset is from Yelp Open Dataset (Round 12 Chanllenge, downloaded on 8/8/2018)
 
@@ -23,7 +23,7 @@ https://www.yelp.com/dataset
 
 1. Focus on restaurants in Phoenix and users with 5 or more reviews on those restaurants.
 
-Combined sub dataset
+Combined sub dataset stored in MongoDB
 
 | Tables | user_id                | business_id            | categories           |
 | ------:|-----------------------:| ----------------------:|---------------------:|
@@ -37,10 +37,11 @@ Combined sub dataset
 Find the most common words in categories
 
 categories word cloud:
+
 ![](/Presentation/words_frequency.png)
 
 2. For a given user, input a destination city, pull live Yelp restaurants data using Yelp API and do the recommendation to the user.
 
-### AWS EC2 setup
+## AWS EC2 setup
 
 [Here](/aws_app/) is the instruction.
