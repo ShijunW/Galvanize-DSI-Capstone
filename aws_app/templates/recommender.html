@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+        <style>
+        table, th, td {
+                border: 1px solid black;
+        }
+        .text-vertical-center {
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle;
+        }
+
+        .text-vertical-center h1 {
+                margin: 0;
+                padding: 0;
+                font-size: 4.5em;
+                font-weight: 700;
+        }
+        </style>
+    
+</head>
+
+<body bgcolor="#E6E6FA">
+
+<!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+            <div class="text-vertical-center">
+                <h1>Restaurants Recommended</h1>
+
+                <p>Click the restaurant name for the detail view</p>
+                <table>
+                        {% for index, row in df.iterrows() %}
+                        <tr>
+                                <td>
+                                <img src="{{ row['image_url'] }}" style="width:120px;height:90px;">
+                                </td>
+                                <td><a href="{{ row['url'] }}" target="_blank">{{ row['name'] }}</a></td>
+
+                                <td>{{ row['address0'] }}
+                                    <br>
+                                    {{ row['address1'] }}
+                                    <br>
+                                    {{ row['display_phone'] }}      
+                                </td>
+                                <td>
+                                     <img src="{{ row['stars_url'] }}">
+                                </td>
+                        </tr>
+                        {% endfor %}
+                </table>
+
+                <br>
+                <form action="/" method='GET' >
+                        <button style="font-size: 20px; width: 120px; height: 40px;" type="submit">Start Again</button> 
+                </form>
+
+    
+            </div>
+        </section>
+</body>
+</html>
+    

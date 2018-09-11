@@ -1,5 +1,7 @@
 import pandas as pd
 from collections import Counter
+from pymongo import MongoClient
+
 
 def get_business(user_id):
     '''
