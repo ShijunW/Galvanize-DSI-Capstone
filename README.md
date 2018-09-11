@@ -23,6 +23,22 @@ https://www.yelp.com/dataset
 
 1. Focus on restaurants in Phoenix and users with 5 or more reviews on those restaurants.
 
+Combined sub dataset
+
+| Tables | user_id                | business_id            | categories           |
+| ------:|-----------------------:| ----------------------:|---------------------:|
+| count  | 189773                 | 189773                 | 189773               |
+| unique | 15237                  |   3738                 | 2337                 |
+| top    | d_TBs6J3twMy9GChqUEXkg | OgJ0KxwJcJ9R5bUK0ixCbg | Restaurants, Mexican |
+| freq   | 486                    | 1008                   | 4356                 |
+
+
+
+Find the most common words in categories
+
+categories word cloud:
+![](/Presentation/words_frequency.png)
+
 2. For a given user, input a destination city, pull live Yelp restaurants data using Yelp API and do the recommendation to the user.
 
 ### AWS EC2 setup
