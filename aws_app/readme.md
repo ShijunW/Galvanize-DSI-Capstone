@@ -1,3 +1,5 @@
+Reference [here](https://github.com/gSchool/dsi-high-performance-python/blob/master/individual.md) on Part 2
+
 ## EC2 on AWS
 
 EC2 is a remote virtual machine that runs programs much like your local machine. Here you will learn how to
@@ -67,7 +69,7 @@ pip install awscli boto3
 ```
 sudo service mongod start
 ```
-If there is error, try to follow [this link](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/#install-mongodb-community-edition) to make it work.
+If there is error, try to follow [this link](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/#install-mongodb-community-edition) to solve it.
 
 8. Create MongoDB
 
