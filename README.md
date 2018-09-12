@@ -1,7 +1,7 @@
 # Galvanize-DSI-Capstone
 Capstone Project - Yelp Restaurants Recommender
 
-[AWS EC2 Link](http://34.220.105.213:5000/) for the Restaurants Recommender.
+[AWS EC2 Link](http://34.220.105.213:5000/) for the Restaurants Recommender. Some User IDs to try out: `--Nnm_506G_p8MxAOQna5w`, `--2HUmLkcNHZp0xw6AMBPg`, `-0IiMAZI2SsQ7VmyzJjokQ`
 
 ## Some Screenshots
 
